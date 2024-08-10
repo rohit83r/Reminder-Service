@@ -5,7 +5,7 @@ const create = async (req,res)=>{
         const response =await TicketService.createNotification(req.body);
         return res.status(201).json({
             success:true,
-            err:{},
+            err:{},   
             data:response,
             message:"Successfully registered an email reminder"
         })
